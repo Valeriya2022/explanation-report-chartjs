@@ -1,0 +1,105 @@
+	body {
+  background-color: #e4e4e4;
+}
+.loading{
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  text-align: center;
+
+}
+.loading .middle{
+  display: table-cell;
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+.loading .middle img{
+  width: 60px;
+  height: 60px;
+}
+.header{
+  width: 96%;
+  background-color: #ffffff;
+  padding: 15px 25px;
+  margin: 5px auto;
+  text-align: center
+}
+.col{
+  background-color: #ffffff;
+  padding: 15px 25px;
+  margin: 5px auto;
+
+}
+.col-6{
+  width: 46%;
+  margin: 5px;
+}
+.col-12{
+  width: 96%;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media print {
+  .center {
+    break-inside: avoid;
+  }
+}
+button{
+  padding: 15px 25px;
+  background-color: #c00000;
+  color: #ffffff;
+}
+.reportBlock{
+  width: 1000px;
+  margin: 0 auto;
+}
+canvas{
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+#sevenChart{
+  height: auto !important;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 2000px;
+  background-color: white;
+}
+h1,h2{
+  color: #2f2e2e;
+  margin: 0 auto;
+  font-size: 22px;
+}
+table{
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+thead, th{
+  background-color: #c00000;
+  color: #ffffff;
+}
+table, td {
+  border: 2px solid #000000;
+  color: #000000;
+  font-size: 18px;
+  padding: 8px;
+  border-collapse: collapse;
+}
+@media print {
+  canvas{
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto!important;
+    width: auto!important;
+  }
+}
